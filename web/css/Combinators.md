@@ -66,7 +66,8 @@ The adjacent sibling combinator selects an element that is immediately preceded 
     </p>
 </article>
 ```
-![alt text](image-1.png)
+
+![alt text](sibling-combinator.png)
 
 ### General sibling combinator (`~`)
 
@@ -88,7 +89,9 @@ The general sibling combinator selects all elements that are siblings of a speci
   <p>I am another paragraph.</p>
 </article>
 ```
-![alt text](image.png)
+
+![alt text](general-sibling-combinator.png)
+
 ---
 
 ### Resources

@@ -43,41 +43,48 @@
 ### Examples:
 
 1. Select elements with a specific attribute:
+   
 ```css
 [disabled] {
     opacity: 0.5;
 }
 ```
 
-2. Select elements with a specific attribute value:
+1. Select elements with a specific attribute value:
+   
 ```css
 [type="checkbox"] {
     border: 1px solid black;
 }
 ```
 
-3. Select elements with an attribute containing a specific word:
+1. Select elements with an attribute containing a specific word:
+   
+
 ```css
 [class~="important"] {
     color: red;
 }
 ```
 
-4. Select elements with an attribute value starting with a specific value:
+1. Select elements with an attribute value starting with a specific value:
+   
 ```css
 [href^="https"] {
     color: blue;
 }
 ```
 
-5. Select elements with an attribute value ending with a specific value:
+1. Select elements with an attribute value ending with a specific value:
+   
 ```css
 [src$=".png"] {
     border: 1px solid black;
 }
 ```
 
-6. Select elements with an attribute value containing a specific value anywhere:
+1. Select elements with an attribute value containing a specific value anywhere:
+   
 ```css
 [href*="example"] {
     font-weight: bold;

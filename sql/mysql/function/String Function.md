@@ -1,4 +1,4 @@
-Below is a comprehensive list of MySQL string functions along with their syntax, descriptions, and examples.
+Below is a comprehensive list of MySQL string functions along with their syntax, descriptions, and examples:
 
 1. `ASCII()`
 2. `CHAR_LENGTH()`

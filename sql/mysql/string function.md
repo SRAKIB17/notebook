@@ -1,5 +1,42 @@
 Below is a comprehensive list of MySQL string functions along with their syntax, descriptions, and examples.
 
+1. `ASCII()`
+2. `CHAR_LENGTH()`
+3. `CHAR()`
+4. `CONCAT()`
+5. `CONCAT_WS()`
+6. `FIELD()`
+7. `FIND_IN_SET()`
+8. `FORMAT()`
+9. `INSERT()`
+10. `INSTR()`
+11. `LCASE()`
+12. `LEFT()`
+13. `LENGTH()`
+14. `LOCATE()`
+15. `LPAD()`
+16. `LTRIM()`
+17. `MID()`
+18. `POSITION()`
+19. `REPEAT()`
+20. `REPLACE()`
+21. `REVERSE()`
+22. `RIGHT()`
+23. `RPAD()`
+24. `RTRIM()`
+25. `SPACE()`
+26. `STRCMP()`
+27. `SUBSTRING()`
+28. `TRIM()`
+29. `UCASE()`
+30. `UPPER()`
+31. `BIN()`
+32. `HEX()`
+33. `OCT()`
+34. `QUOTE()`
+35. `UNHEX()`
+
+
 ### 1. `ASCII()`
 **Description:** Returns the ASCII value of the leftmost character of a string.
 

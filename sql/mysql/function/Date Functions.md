@@ -1,4 +1,3 @@
-Sure, here is a comprehensive overview of MySQL date functions with their syntax, descriptions, and examples.
 
 ### 1. `ADDDATE()`
 

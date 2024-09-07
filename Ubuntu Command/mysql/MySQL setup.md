@@ -27,6 +27,16 @@ sudo mysql_secure_installation
 এই স্ক্রিপ্টটি আপনাকে বিভিন্ন প্রশ্ন জিজ্ঞাসা করবে:
 
 1. **VALIDATE PASSWORD PLUGIN সেটআপ করতে চান?**: আপনার পাসওয়ার্ডের নিরাপত্তা বাড়াতে এটি ইনস্টল করা যেতে পারে। যদি হ্যাঁ চান, তাহলে `Y` টাইপ করুন এবং এন্টার চাপুন। নাহলে `N` টাইপ করুন।
+
+```bash
+SHOW VARIABLES LIKE 'validate_password%';
+```
+
+- Minimum Length: 8 characters.
+- Mixed Case: At least 1 uppercase letter and 1 lowercase letter.
+- Numbers: At least 1 numeric digit.
+- Special Characters: At least 1 special character (e.g., !@#$%^&*()).
+
 2. **রুট পাসওয়ার্ড সেট করুন**: আপনার MySQL রুট ইউজারের জন্য একটি শক্তিশালী পাসওয়ার্ড সেট করুন।
 3. **অজানা ইউজার অপসারণ করুন**: অজানা ইউজার অ্যাকাউন্ট মুছে ফেলতে `Y` টাইপ করুন এবং এন্টার চাপুন।
 4. **রিমোট রুট লগইন নিষিদ্ধ করুন**: রিমোট রুট লগইন নিষিদ্ধ করতে `Y` টাইপ করুন এবং এন্টার চাপুন।
@@ -57,7 +67,6 @@ CREATE DATABASE my_database;
 CREATE USER 'my_user'@'localhost' IDENTIFIED BY 'my_password';
 
 GRANT ALL PRIVILEGES ON my_database.* TO 'my_user'@'localhost';
-
 FLUSH PRIVILEGES;
 ```
 
@@ -121,10 +130,8 @@ MySQL সার্ভারের স্ট্যাটাস পরীক্ষ
 sudo systemctl status mysql
 ```
 
-### ধাপ 8: আপনি MySQL-কে বুট সময়ে চালু করার জন্য সক্রিয় করতে পারেন:
+### ধাপ 8: আপনি MySQL-কে বুট সময়ে চালু করার জন্য সক্রিয় করতে পারেন
 
 ```bash
 sudo systemctl enable mysql
 ```
-
-এই ছিল MySQL Server ইনস্টল এবং সেটআপ করার সম্পূর্ণ নির্দেশিকা। আপনি যদি এই নির্দেশনাগুলি অনুসরণ করেন, তাহলে সহজেই আপনার সার্ভারে MySQL ইনস্টল এবং সেটআপ করতে পারবেন। যদি আরও কোনো প্রশ্ন থাকে, জানাতে পারেন!
